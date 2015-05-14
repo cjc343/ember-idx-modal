@@ -6,10 +6,10 @@ export default {
   initialize: function() {
     var Config = Em.IdxConfig = Em.IdxConfig ? Em.IdxConfig : IdxConfig.create();
 
-    var defaultConfig = Em.Config.getConfig('bs');
+    var defaultConfig = Config.getConfig('bs');
     if (!defaultConfig) {
-        Em.Config.addConfig('bs');
-        defaultConfig = Em.Config.getConfig('bs');
+        Config.addConfig('bs');
+        defaultConfig = Config.getConfig('bs');
     }
 
     defaultConfig['modal'] = {
