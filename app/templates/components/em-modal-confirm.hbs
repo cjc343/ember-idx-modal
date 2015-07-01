@@ -8,7 +8,7 @@
         {{yield}}
         <!--Confirmation with a reason-->
         {{#if reasonModal}}
-        {{view Ember.Select valueBinding="message" contentBinding="messages" optionValuePath="id" optionLabelPath="content.msg"}}
+        {{view Ember.Select value=message content=messages optionValuePath="id" optionLabelPath="content.msg"}}
         {{/if}}
     {{/em-modal-body}}
     {{#em-modal-footer}}
