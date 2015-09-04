@@ -43,6 +43,7 @@ export default Em.Component.extend(WithConfigMixin, StyleBindingsMixin, {
   attributeBindings: ['is-open', 'did-open', 'tabindex'],
   classNameBindings: ['styleClasses', 'styleOpenningClasses'],
   styleBindings: ['display'],
+  modalSizeClass: 'modal-lg',
 
   /**
    * Define the tabindex DOM property.
